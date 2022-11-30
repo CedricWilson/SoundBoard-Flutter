@@ -59,7 +59,7 @@ class CText extends StatelessWidget {
       softWrap: multiLine,
       text: TextSpan(
           text: label.toString(),
-          style: GoogleFonts.capriola(
+          style: GoogleFonts.poppins(
               textStyle: TextStyle(
             fontStyle: isItalic ? FontStyle.italic : null,
             fontWeight: fontWeight(),
