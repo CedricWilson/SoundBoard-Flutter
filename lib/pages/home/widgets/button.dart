@@ -34,7 +34,7 @@ class CButton extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Expanded(child: CText(name,center: true,)),
+            Expanded(child: CText(name.toUpperCase(),center: true,)),
           ],
         ),
       ),
