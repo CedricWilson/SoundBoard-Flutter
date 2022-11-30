@@ -12,6 +12,9 @@ class CButton extends StatelessWidget {
   Color kSecondaryButtonLightColor = Colors.white;
   Color kBorderColorGreen = Colors.white.withOpacity(0.8);
 
+// 
+  // Color kSecondaryButtonLightColor = Colors.black;
+  // Color kBorderColorGreen = Colors.white;
   
 
   @override
@@ -23,7 +26,7 @@ class CButton extends StatelessWidget {
       rightShadowColor:
           ColorUtils.getHorizontalShadow(kBorderColorGreen).toColor(),
       animationDuration: Duration(microseconds: 100),
-      depth: 3,
+      depth: 6,
       onTapUp: () {},
       border: Border.all(
         color: kBorderColorGreen,
@@ -34,7 +37,7 @@ class CButton extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Expanded(child: CText(name.toUpperCase(),center: true,)),
+            Expanded(child: CText(name.toUpperCase(),fitted: true,isBold: true,)),
           ],
         ),
       ),

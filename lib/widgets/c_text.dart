@@ -2,7 +2,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 
 class CText extends StatelessWidget {
   dynamic label;
@@ -52,7 +52,6 @@ class CText extends StatelessWidget {
   }
 
   _text() {
-    
     return RichText(
       textAlign: textAlign(),
       overflow: textOverflow(overflow) ?? TextOverflow.visible,
@@ -60,18 +59,17 @@ class CText extends StatelessWidget {
       softWrap: multiLine,
       text: TextSpan(
           text: label.toString(),
-          style: TextStyle(
+          style: GoogleFonts.poppins(
+              textStyle: TextStyle(
             fontStyle: isItalic ? FontStyle.italic : null,
             fontWeight: fontWeight(),
             height: height,
             fontSize: getSize(size) ?? 4,
             color: color,
             decoration: underline(isUnderlined, isStriked),
-          )),
+          ))),
     );
   }
-
-  
 
   getSize(double d) {
     // return (d - 10).w;
